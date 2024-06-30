@@ -11,6 +11,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
+import Link from 'next/link'
 
 const CadastroPage = () => {
 
@@ -44,10 +45,12 @@ const CadastroPage = () => {
           </form>
         </CardContent>
         <CardFooter className="flex justify-between">
-          <Button variant="outline">
-            <ChevronLeftIcon className='text-warning h-4 w-4 mr-1'/>
-            Voltar
-          </Button>
+          <Link href={'/'}>
+            <Button variant="outline">
+              <ChevronLeftIcon className='text-warning h-4 w-4 mr-1'/>
+              Voltar
+            </Button>
+          </Link>
           <AnimatedSubscribeButton
             buttonColor="#3333"
             buttonTextColor="#ffffff"
