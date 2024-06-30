@@ -8,7 +8,8 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
-import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react"
+import { Separator } from "@/components/ui/separator"
+import { ChevronLeftIcon, ChevronRightIcon, GithubIcon } from "lucide-react"
 // import { Label } from "@/components/ui/label"
 
 const LoginPage = () => {
@@ -37,6 +38,14 @@ const LoginPage = () => {
           <ChevronRightIcon className='text-primary h-4 w-4 ml-2' />
           </Button>
         </CardFooter>
+        <Separator/>
+        <div className="flex flex-col items-center gap-2 px-6 mb-6">
+          <small className="font-extralight">ou se preferir</small>
+          <Button className="w-full hover:bg-mediumDark" variant={'outline'}>
+            Entrar com Github
+            <GithubIcon className="ml-2 w-5 h-5"/>
+          </Button>
+        </div>
       </Card>
     </section>
   )
