@@ -5,7 +5,7 @@ import "./globals.css";
 const montserrat = Montserrat({ subsets: ["latin", "latin-ext"], weight: ["300", "500", "600", "700"] });
 
 export const metadata: Metadata = {
-  title: "DeveProgramar | Aprenda programação",
+  title: "Aprenda programação mesmo se for iniciante",
   description: "Curso de programação, aprenda programação sem dificuldades. Javascript, React, Node e mais.",
 };
 

@@ -112,17 +112,17 @@ export function NavigationBar() {
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
-          <NavigationMenuItem>
+          {/* <NavigationMenuItem>
             <Link href="/auth/cadastro" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 Me Cadastrar
               </NavigationMenuLink>
             </Link>
-          </NavigationMenuItem>
+          </NavigationMenuItem> */}
           <NavigationMenuItem>
             <Link href="/auth/login" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                <User className="mr-2 w-4 h-4"/> Login
+                <User className="mr-2 w-4 h-4"/> Entrar
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
