@@ -59,7 +59,7 @@ export function NavigationBar() {
   return (
     <nav className="flex flex-row items-center px-4 py-2">
       <ul className="flex-1 font-black">
-        <p>@deveprogramar</p>
+        <p>Dev.P</p>
       </ul>
       <NavigationMenu>
         <NavigationMenuList>
