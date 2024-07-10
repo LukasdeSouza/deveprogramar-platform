@@ -17,4 +17,27 @@ const chipsContent: ChipsContentProps= [
   { icon: <FileJson className="text-primary w-4 h-4"/>, label: 'Projetos de Verdade' },
 ]
 
-export {chipsContent}
+const cardCoursesArray = [
+  {
+    title: 'Typescript', 
+    description: 'entenda como funciona este superset de Javascript e deixe suas aplicações mais robustas', 
+    complexity: 'Intermediário'
+  },
+  {
+    title: 'Web Design', 
+    description: 'tipografia, alinhamento, gestalt, teoria das cores, responsividade e muitos mais.', 
+    complexity: 'Iniciante'
+  },
+  {
+    title: 'Node Js', 
+    description: 'crie suas próprias APIs, inicie um servidores, construa autenticações', 
+    complexity: 'Intermediário'
+  },
+  {
+    title: 'React', 
+    description: 'Evolua no Frontend desenvolvendo aplições reativas e robustas com React.', 
+    complexity: 'Intermediário'
+  },
+]
+
+export {chipsContent, cardCoursesArray}
