@@ -57,16 +57,13 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationBar() {
   return (
-    <nav className="flex flex-row items-center px-4 py-2">
-      <ul className="flex-1 font-black">
-        <p>Dev.P</p>
-      </ul>
+    <nav className="flex flex-row justify-center items-center px-8 py-2">
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuTrigger>Cursos</NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className="grid p-6 md:w-[400px] lg:w-[450px] lg:grid-cols-[.75fr_1fr]">
+              <ul className="border border-mediumDark z-10 bg-deepDark shadow-md grid p-6 md:w-[400px] lg:w-[450px] lg:grid-cols-[.75fr_1fr]">
                 <li className="row-span-3">
                   <NavigationMenuLink asChild>
                     <a
@@ -99,7 +96,7 @@ export function NavigationBar() {
           <NavigationMenuItem>
             <NavigationMenuTrigger>Tecnologias</NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className="grid w-[300px] p-4 md:w-[450px] md:grid-cols-2 lg:w-[450px] ">
+              <ul className="border border-mediumDark z-10 bg-deepDark shadow-md grid w-[300px] p-4 md:w-[450px] md:grid-cols-2 lg:w-[450px] ">
                 {components.map((component) => (
                   <ListItem
                     key={component.title}
@@ -112,17 +109,11 @@ export function NavigationBar() {
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
-          {/* <NavigationMenuItem>
-            <Link href="/auth/cadastro" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Me Cadastrar
-              </NavigationMenuLink>
-            </Link>
-          </NavigationMenuItem> */}
           <NavigationMenuItem>
             <Link href="/auth/login" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                <User className="mr-2 w-4 h-4"/> Entrar
+                Entrar
+                <User className="ml-2 w-4 h-4"/> 
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>

@@ -9,17 +9,17 @@ import {
 } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Separator } from "@/components/ui/separator"
-import { ChevronLeftIcon, ChevronRightIcon, GithubIcon } from "lucide-react"
-// import { Label } from "@/components/ui/label"
+import { ChevronRightIcon, GithubIcon, User2Icon } from "lucide-react"
+import Link from "next/link"
 
 const LoginPage = () => {
   return (
     <section className="h-full flex flex-col items-center justify-center">
-      <Card className="w-full max-w-sm">
+      <Card className="w-full max-w-sm border-mediumDark">
         <CardHeader>
           <CardTitle className="text-2xl">Login</CardTitle>
           <CardDescription>
-            digite seu email abaixo para entrar em sua conta.
+            se autentique para acessar sua conta.
           </CardDescription>
         </CardHeader>
         <CardContent className="grid gap-4">
@@ -32,14 +32,22 @@ const LoginPage = () => {
             <Input id="password" placeholder="*******" type="password" required />
           </div>
         </CardContent>
-        <CardFooter>
-          <Button className="w-full bg-mediumDark hover:bg-deepDark">
-            Entrar
-          <ChevronRightIcon className='text-primary h-4 w-4 ml-2' />
+        <CardFooter className="flex flex-col gap-4">
+          <Button className="w-full bg-secondaryDark hover:bg-mediumDark transition ease-in-outdelay-100 hover:scale-105">
+            Fazer Login
+            <ChevronRightIcon className='text-primary h-4 w-4 ml-2' />
           </Button>
+          <Link className="w-full" href={'/auth/cadastro'}>
+            <Button variant={'outline'} className="w-full border-secondaryDark hover:bg-mediumDark transition ease-in-outdelay-100 hover:scale-105">
+              Me Cadastrar
+              <User2Icon className='text-primary h-4 w-4 ml-2' />
+            </Button>
+          </Link>
         </CardFooter>
-        <Separator/>
-        <div className="flex flex-col items-center gap-2 px-6 mb-6">
+        <div className="px-8">
+          <Separator className="bg-mediumDark"/>
+        </div>
+        <div className="flex flex-col items-center gap-2 px-6 my-4 mb-6">
           <small className="font-extralight">ou se preferir</small>
           <Button className="w-full hover:bg-mediumDark" variant={'outline'}>
             Entrar com Github

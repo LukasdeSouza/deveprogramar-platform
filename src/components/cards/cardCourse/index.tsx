@@ -21,7 +21,7 @@ const CardCourse: NextPage<CardCourseProps> = ({ title, description, complexity 
           {description}
         </CardDescription>
         <div className='flex flex-col gap-1'>
-          <p className='text-sm'>Complexidade:</p>
+          <p className='text-xs'>Complexidade:</p>
           <Chip
             icon={<BarChart className='text-primary w-3 h-3' />} 
             label={complexity}

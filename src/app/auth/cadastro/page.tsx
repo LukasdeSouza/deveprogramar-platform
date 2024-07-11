@@ -17,7 +17,7 @@ const CadastroPage = () => {
 
   return (
     <div className='flex w-full h-full items-center justify-center m-auto'>
-      <Card className="w-[350px]">
+      <Card className="w-[350px] border-mediumDark">
         <CardHeader>
           <CardTitle>Crie seu Usuário</CardTitle>
           <CardDescription>Acesse a plataforma e comece a aprender.</CardDescription>
@@ -46,8 +46,8 @@ const CadastroPage = () => {
         </CardContent>
         <CardFooter className="flex justify-between">
           <Link href={'/'}>
-            <Button variant="outline">
-              <ChevronLeftIcon className='text-warning h-4 w-4 mr-1'/>
+            <Button className='bg-secondaryDark' >
+              <ChevronLeftIcon className='h-4 w-4 mr-1'/>
               Voltar
             </Button>
           </Link>
